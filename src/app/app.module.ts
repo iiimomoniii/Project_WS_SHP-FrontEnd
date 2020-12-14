@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

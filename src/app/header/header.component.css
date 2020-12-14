@@ -1,5 +1,11 @@
+.avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #ffffff;
+}
 .vl {
     border-left: 1px solid #ffffff;
     margin: 0 5px;
     height: 20px;
 }
+
