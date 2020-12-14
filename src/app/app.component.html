@@ -1,9 +1,11 @@
 <mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" opened="false">
+    <mat-sidenav #sidenav mode="side" opened="false">
         <button mat-button>click</button>
         <button mat-button>click</button>
     </mat-sidenav>
     <mat-sidenav-content>
-        <app-header></app-header>
+        <!-- <app-header (Say)="onSayHi($event)"></app-header> -->
+        <app-header (navToggle)="sidenav.toggle()"></app-header>
+
     </mat-sidenav-content>
 </mat-sidenav-container>

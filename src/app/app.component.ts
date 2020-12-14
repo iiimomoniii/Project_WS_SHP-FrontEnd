@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SHP-FrontEnd';
+
+  //alert before active sidenav
+  // onSayHi(text :String){
+  //   alert(text);
+  // }
+
+
 }
