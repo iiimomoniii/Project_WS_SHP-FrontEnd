@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  demoMailNoti: any;
+  demoNoti :any;
   constructor() { }
 
   ngOnInit(): void {
+    this.demoMailNoti = 10;
+    this.demoNoti = 90;
   }
 
 }
