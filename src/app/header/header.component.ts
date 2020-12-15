@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   @Output() navToggle = new EventEmitter();
   //send action to main from child with string
   //@Output("Say") sayHi = new EventEmitter<String>(); // String || Number
+
+  @Input("media_query") mobileQueryMax: boolean;
   
   demoMailNoti: string;
   demoNoti : string;
