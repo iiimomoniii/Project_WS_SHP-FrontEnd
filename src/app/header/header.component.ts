@@ -11,13 +11,13 @@ export class HeaderComponent implements OnInit {
   //send action to main from child with string
   //@Output("Say") sayHi = new EventEmitter<String>(); // String || Number
   
-  demoMailNoti: any;
-  demoNoti :any;
+  demoMailNoti: string;
+  demoNoti : string;
   constructor() { }
 
   ngOnInit(): void {
-    this.demoMailNoti = 10;
-    this.demoNoti = 90;
+    this.demoMailNoti = "10";
+    this.demoNoti = "90";
   }
 
   onClickNavToggle(){
