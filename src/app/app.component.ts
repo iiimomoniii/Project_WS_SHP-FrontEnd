@@ -17,12 +17,12 @@ export class AppComponent implements OnDestroy {
     //mediaQueryList = window.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDeterRef.detectChanges();
     this.mobileQueryMax = media.matchMedia('(max-width: 600px)');
-    this.mobileQueryMax.addListener(this._mobileQueryListener);
+    this.mobileQueryMax.addEventListener('change', this._mobileQueryListener);
     
   }
 
   ngOnDestroy() : void{
-    this.mobileQueryMax.removeListener(this._mobileQueryListener);
+    this.mobileQueryMax.removeEventListener('change', this._mobileQueryListener);
   }
 
   //alert before active sidenav
