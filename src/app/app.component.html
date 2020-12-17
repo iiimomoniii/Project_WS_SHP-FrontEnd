@@ -5,6 +5,8 @@
     <mat-sidenav-content>
         <!-- <app-header (Say)="onSayHi($event)"></app-header> -->
         <app-header [media_query]="mobileQueryMax.matches" (navToggle)="sidenav.toggle()"></app-header>
-
+        <div class="content-wrapper">
+            <router-outlet></router-outlet>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

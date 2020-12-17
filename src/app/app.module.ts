@@ -12,14 +12,21 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { StockHomeComponent } from './components/stock/stock-home/stock-home.component';
+import { StockCreateComponent } from './components/stock/stock-create/stock-create.component';
+import { StockEditComponent } from './components/stock/stock-edit/stock-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SideNavComponent
+    SideNavComponent,
+    StockHomeComponent,
+    StockCreateComponent,
+    StockEditComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     MatBadgeModule,
     MatMenuModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
