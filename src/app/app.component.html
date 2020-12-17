@@ -1,7 +1,6 @@
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container fullscreen>
     <mat-sidenav #sidenav [mode]="mobileQueryMax.matches ? 'over' : 'side'" [opened]="mobileQueryMax.matches ? false : true">
-        <button mat-button>click</button>
-        <button mat-button>click</button>
+       <app-side-nav></app-side-nav>
     </mat-sidenav>
     <mat-sidenav-content>
         <!-- <app-header (Say)="onSayHi($event)"></app-header> -->
