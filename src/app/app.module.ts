@@ -13,6 +13,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+
 
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { StockHomeComponent } from './components/stock/stock-home/stock-home.component';
@@ -39,7 +41,8 @@ import { StockEditComponent } from './components/stock/stock-edit/stock-edit.com
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
