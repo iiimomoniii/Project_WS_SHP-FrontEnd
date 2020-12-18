@@ -3,7 +3,53 @@
     width: 3.5rem;
 }
 
+.bgcolor {
+    background: #3f51b5;
+    color: white; 
+    font-size:10pt;
+}
+
 th.mat-column-image,
 td.mat-column-image{
-    width: 180px;
+    width: 50px;
+}
+
+th.mat-column-price,
+td.mat-column-price{
+    width: 50px;
+}
+
+th.mat-column-name,
+td.mat-column-name{
+    width: 100px;
+}
+
+th.mat-column-stock,
+td.mat-column-stock{
+    width: 50px;
+}
+
+th.mat-column-action,
+td.mat-column-action{
+    width: 100px;
+}
+
+.over-lay {
+    position: relative;
+    width: 80px;
+}
+
+.over-lay>img{
+    height: 80px;
+    object-fit: cover;
+}
+
+.over-lay-text{
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:#fff;
+    opacity: 0.7;
+    width: 100%;
 }
